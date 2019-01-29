@@ -1,0 +1,11 @@
+spring:  
+  application:
+    name: sathish-booking-service-mvc 
+
+
+security:
+ basic:
+   enabled: false    
+
+#booking-service-dao:
+  #url: https://techannotation-booking-service-dao.cfapps.io

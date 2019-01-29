@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Booking List</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body bgcolor="#ffda95">
+
+	<table cellpadding="0" cellspacing="2" width="800"
+		style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; background-color: #ffda95;">
+		<tr>
+			<td colspan="2"><h2>Booking List</h2></td>
+		</tr>
+		<th:block th:each="booking : ${bookings}">
+			<tr>
+				<td
+					style="background-color: #fe9901; color: #FFF; height: 20px; border: 1px solid #666; padding: 0 5px 0 10px;">Code</td>
+				<td
+					style="background-color: #fff; height: 20px; border: 1px solid #333; padding: 0 5px 0 10px;"><strong
+					th:text="${booking.code}"></strong></td>
+			</tr>
+			<tr>
+				<td
+					style="background-color: #fe9901; color: #FFF; height: 20px; border: 1px solid #666; padding: 0 5px 0 10px;">Flight
+					Number</td>
+				<td
+					style="background-color: #fff; height: 20px; border: 1px solid #333; padding: 0 5px 0 10px;"><strong
+					th:text="${booking.flightNumber}"></strong></td>
+			</tr>
+			<tr>
+				<td
+					style="background-color: #fe9901; color: #FFF; height: 20px; border: 1px solid #666; padding: 0 5px 0 10px;">Name</td>
+				<td
+					style="background-color: #fff; height: 20px; border: 1px solid #333; padding: 0 5px 0 10px;"><strong
+					th:text="${booking.name}"></strong></td>
+			</tr>
+			<tr>
+				<td
+					style="background-color: #fe9901; color: #FFF; height: 20px; border: 1px solid #666; padding: 0 5px 0 10px;">Surname</td>
+				<td
+					style="background-color: #fff; height: 20px; border: 1px solid #333; padding: 0 5px 0 10px;"><strong
+					th:text="${booking.surname}"></strong></td>
+			</tr>
+			<tr>
+				<td
+					style="background-color: #fe9901; color: #FFF; height: 20px; border: 1px solid #666; padding: 0 5px 0 10px;">Seat</td>
+				<td
+					style="background-color: #fff; height: 20px; border: 1px solid #333; padding: 0 5px 0 10px;"><strong
+					th:text="${booking.seat}"></strong></td>
+			</tr>
+			<tr>
+				<td
+					style="background-color: #c67701; color: #FFF; height: 20px; border: 1px solid #666; padding: 0 5px 0 10px;"
+					colspan="2">&nbsp;</td>
+			</tr>
+
+		</th:block>
+
+	</table>
+
+</body>
+
+</html>
+

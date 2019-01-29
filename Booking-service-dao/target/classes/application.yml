@@ -1,0 +1,3 @@
+spring:  
+  application:
+    name: sathish-booking-service-dao     
